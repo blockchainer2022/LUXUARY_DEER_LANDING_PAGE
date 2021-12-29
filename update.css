@@ -1,0 +1,35 @@
+@media (max-width: 1050px) {
+  .header__navbar {
+    justify-content: flex-end !important;
+  }
+  .footer .header__social-list {
+    position: relative !important;
+    opacity: 1 !important;
+  }
+  .header__social-list2 {
+    display: none !important;
+  }
+}
+
+.hidden {
+  display: none;
+}
+.timer {
+  display: flex;
+  color: black;
+}
+.timer p {
+  color: black;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  line-height: 1.3;
+}
+.timer span {
+  margin-top: 0;
+}
+.timer div {
+  margin-left: 10px;
+  text-transform: capitalize;
+  text-align: center;
+}
