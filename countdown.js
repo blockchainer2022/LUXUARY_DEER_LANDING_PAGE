@@ -1,3 +1,16 @@
+const getData = () => {
+  fetch(
+    "https://defi.mobiwebsolutionz.com/api/timer/get-time.php?site=luxuryDeer"
+  )
+    .then((response) => {
+      console.log(response.data);
+    })
+    .catch((error) => {
+      // handle the error
+    });
+};
+
+getData();
 function updateTimer() {
   future = Date.parse("2021-12-30T00:00:00.000Z");
   now = new Date();
