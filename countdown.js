@@ -1,18 +1,80 @@
-const getData = () => {
-  fetch(
-    "https://defi.mobiwebsolutionz.com/api/timer/get-time.php?site=luxuryDeer"
-  )
-    .then((response) => {
-      console.log(response.data);
-    })
-    .catch((error) => {
-      // handle the error
-    });
-};
+// const getData = () => {
+//   let time = "";
 
-getData();
+//   fetch(
+//     "https://defi.mobiwebsolutionz.com/api/timer/get-time.php?site=luxuryDeer"
+//   )
+//     .then((response) => {
+//       return response.json();
+//     })
+//     .then((data) => {
+//       time = data.data;
+//     })
+//     .catch((error) => {
+//       console.log(error);
+//     });
+//   console.log(time);
+// };
+// const getTime = getData();
+
+// console.log(getTime);
+
+// async function getUsers() {
+//   let url =
+//     "https://defi.mobiwebsolutionz.com/api/timer/get-time.php?site=luxuryDeer";
+//   try {
+//     let res = await fetch(url);
+//     let time = await res.json();
+//     return time;
+//   } catch (error) {
+// //     console.log(error);
+// //   }
+// // }
+// // getUsers();
+
+// // api url
+// const url =
+//   "https://defi.mobiwebsolutionz.com/api/timer/get-time.php?site=luxuryDeer";
+
+// // Defining async function
+// async function getapi(url) {
+//   // Storing response
+//   const response = await fetch(url);
+
+//   // Storing data in form of JSON
+//   var data = await response.json();
+//   return data;
+// }
+// // Calling that async function
+// const date = await getapi(api_url);
+// console.log(date);
+
+// const url =
+//   "https://defi.mobiwebsolutionz.com/api/timer/get-time.php?site=luxuryDeer";
+// fetch(url)
+//   .then(function (u) {
+//     return u.json();
+//   })
+//   .then(function (json) {
+//     jsondata = json;
+//   });
+
+// console.log(jsondata);
+
 function updateTimer() {
-  future = Date.parse("2021-12-30T00:00:00.000Z");
+  let jsondata;
+  const url =
+    "https://defi.mobiwebsolutionz.com/api/timer/get-time.php?site=luxuryDeer";
+  fetch(url)
+    .then(function (u) {
+      return u.json();
+    })
+    .then(function (json) {
+      jsondata = json;
+    });
+  console.log(jsondata);
+
+  future = Date.parse("2022-01-19T12:00:00.000Z");
   now = new Date();
   diff = future - now;
   if (diff < 0) {
