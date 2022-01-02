@@ -4,3 +4,7 @@
 .infon2 {
   margin-left: 20%;
 }
+
+.header__social-list {
+  pointer-events: all !important;
+}
