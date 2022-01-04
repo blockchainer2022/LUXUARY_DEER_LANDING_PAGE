@@ -62,19 +62,19 @@
 // console.log(jsondata);
 
 function updateTimer() {
-  let jsondata;
-  const url =
-    "https://defi.mobiwebsolutionz.com/api/timer/get-time.php?site=luxuryDeer";
-  fetch(url)
-    .then(function (u) {
-      return u.json();
-    })
-    .then(function (json) {
-      jsondata = json;
-    });
-  console.log(jsondata);
+  // let jsondata;
+  // const url =
+  //   "https://defi.mobiwebsolutionz.com/api/timer/get-time.php?site=luxuryDeer";
+  // fetch(url)
+  //   .then(function (u) {
+  //     return u.json();
+  //   })
+  //   .then(function (json) {
+  //     jsondata = json;
+  //   });
+  // console.log(jsondata);
 
-  future = Date.parse("2022-01-19T12:00:00.000Z");
+  future = Date.parse("2022-01-24T12:00:00.000Z");
   now = new Date();
   diff = future - now;
   if (diff < 0) {
